@@ -26,6 +26,7 @@ class ViewController: UIViewController {
   extension ViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         var locationMain : String?
         var temp : Double?
         print(searchBar.text!)
