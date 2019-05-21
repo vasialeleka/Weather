@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
            searchBar.delegate = self
@@ -37,8 +39,13 @@ class ViewController: UIViewController {
                 }
                 if let current = json["current"]{
                     temp = current["temp_c"] as? Double
-                    print(temp)
+                    print(temp!)
                 }
+                DispatchQueue.main.async {
+                    self.cityLabel.text = locationMain
+                    self.temperatureLabel.text = "\(temp!) °C"
+                }
+               
             } catch let jsonError{
                 print(jsonError)
             }
