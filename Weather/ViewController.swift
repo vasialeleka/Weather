@@ -25,6 +25,7 @@ class ViewController: UIViewController {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         var locationMain : String?
+        var temp : Double?
         print(searchBar.text!)
         let urlString = "https://api.apixu.com/v1/current.json?key=6d5e4821328f498aade150303192105&q="+searchBar.text!
         let url = URL(string: urlString)
@@ -33,6 +34,10 @@ class ViewController: UIViewController {
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String : AnyObject]
                 if let location  = json["location"] {
                     locationMain = location["name"] as? String
+                }
+                if let current = json["current"]{
+                    temp = current["temp_c"] as? Double
+                    print(temp)
                 }
             } catch let jsonError{
                 print(jsonError)
