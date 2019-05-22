@@ -21,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJy-G1-rwJ">
-                                <rect key="frame" x="117.5" y="254" width="85.5" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XJy-G1-rwJ">
+                                <rect key="frame" x="8" y="254" width="304" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,15 +44,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2A7-Ar-Qa3"/>
+                            <constraint firstItem="XJy-G1-rwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117.5" id="3Rl-VD-u3Q"/>
                             <constraint firstItem="XJy-G1-rwJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4dO-89-tHE"/>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="87P-Zz-vGa"/>
+                            <constraint firstItem="XJy-G1-rwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="EMr-ep-gtt"/>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fce-Vt-rQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XJy-G1-rwJ" secondAttribute="trailing" constant="117" id="QzY-1g-vsy"/>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eyY-TF-2og"/>
                             <constraint firstItem="p3e-Q0-nCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iUF-3Y-HbC"/>
                             <constraint firstItem="p3e-Q0-nCM" firstAttribute="top" secondItem="XJy-G1-rwJ" secondAttribute="bottom" constant="8" id="mf2-bF-egw"/>
                             <constraint firstItem="XJy-G1-rwJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qBy-Q6-MaF"/>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uvO-D4-yvj"/>
                             <constraint firstItem="Fhm-i1-foU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xL5-ke-6zV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XJy-G1-rwJ" secondAttribute="trailing" constant="8" id="yVV-E7-80I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
